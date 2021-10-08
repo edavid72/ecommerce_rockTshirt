@@ -6,7 +6,7 @@ import { DataContext } from '../context/DataProvider';
 const Navbar = () => {
   const value = useContext(DataContext);
   const [menu, setMenu] = value.menu;
-  const [cart, setCart] = value.cart;
+  const [cart] = value.cart;
 
   const toggleTrue = () => {
     setMenu(!menu);
@@ -17,12 +17,12 @@ const Navbar = () => {
       <div className="container mx-auto flex">
         <div className="w-3/12 flex p-1 tablet:p-3">
           <img src={roca} alt="rock&tsirt" className="logo" />
-          <div className="text-yellow text-sm tablet:text-3xl">
+          <Link to="/" className="text-yellow text-sm tablet:text-3xl">
             <p>
               Rock <span className="font-bold text-grey">&</span>
             </p>
-            <p>Tshirtd</p>
-          </div>
+            <p>Tshirt</p>
+          </Link>
         </div>
 
         <div className="w-6/12 flex justify-around font-bold items-center text-2xl tablet:text-4xl">

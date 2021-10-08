@@ -86,12 +86,14 @@ const Cart = () => {
 
                     <div className="flex flex-col justify-center items-center text-xl laptop:text-2xl">
                       <i
-                        className="far fa-caret-square-up p-2 cursor-pointer text-blue hover:text-navy"
+                        className="fas fa-plus-circle p-2 cursor-pointer text-navy"
                         onClick={() => addAnItem(product.id)}
                       ></i>
-                      <p className="font-bold text-blue">{product.qty}</p>
+
+                      <p className="font-bold text-navy">{product.qty}</p>
+
                       <i
-                        className="far fa-caret-square-down p-2 cursor-pointer text-blue hover:text-navy"
+                        className="fas fa-minus-circle p-2 cursor-pointer text-navy"
                         onClick={() => subtractAnItem(product.id)}
                       ></i>
                     </div>
