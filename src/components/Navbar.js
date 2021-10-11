@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="container mx-auto flex">
         <div className="w-3/12 flex p-1 tablet:p-3">
           <img src={roca} alt="rock&tsirt" className="logo" />
-          <Link to="/products" className="text-yellow text-sm tablet:text-3xl">
+          <Link to="/" className="text-yellow text-sm tablet:text-3xl">
             <p>
               Rock <span className="font-bold text-grey">&</span>
             </p>
@@ -26,6 +26,9 @@ const Navbar = () => {
         </div>
 
         <div className="w-6/12 flex justify-around font-bold items-center text-2xl tablet:text-4xl">
+          <Link to="/" className="select">
+            Home
+          </Link>
           <Link to="/products" className="select">
             Products
           </Link>
