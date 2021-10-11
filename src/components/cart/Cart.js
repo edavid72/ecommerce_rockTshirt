@@ -33,7 +33,7 @@ const Cart = () => {
     });
   };
 
-  console.log(cart);
+  /* console.log(cart); */
 
   const handleClickDeleteItem = (id) => {
     if (window.confirm('Do you want to remove this product from your cart?')) {

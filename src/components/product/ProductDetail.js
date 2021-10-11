@@ -9,7 +9,7 @@ const ProductDetail = ({ history }) => {
   const params = useParams();
   const addItemtoCart = value.addItemtoCart;
 
-  console.log(history);
+  /* console.log(history); */
 
   useEffect(() => {
     products.forEach((product) => {
